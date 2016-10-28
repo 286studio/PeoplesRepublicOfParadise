@@ -2,7 +2,7 @@
 
 *scene1
 ; ================== Phase 2 ====================
-@showInst("Excellent! All people must dance to praise me!",2000)
+@showInst("Excellent! All people must dance to praise me!",1500)
 @friend(3,'tri','white',-100,-100)
 @friend(4,'cir','yellow',0,-100)
 @friend(5,'tri','white',100,-100)
@@ -10,7 +10,7 @@
 @friend(7,'cir','yellow',0,100)
 @friend(8,'tri','white',100,100)
 
-@showInst("I'll arrange more excited music!",1000)
+@showInst("I'll arrange for more excited music!",1500)
 @bgm('HappyBirthday.mp3')
 
 ; =========== #1
@@ -36,6 +36,7 @@
 @waitMoveAll()
 
 ; =========== #2
+@showInst(" ",10)
 
 @moveAll(0,100)
 @showArea(0,100,50)
@@ -135,6 +136,8 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
+@showInst("You there! Dance better!",1000)
+
 @moveAllMis(-100,0,null,[5,8],[[-10,-5],[-15,-20]])
 @showArea(-100,0,50)
 @testArea(-100,0,50,4000)
@@ -145,8 +148,8 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@showInst("Oh look you two! Are you having troubles?",2000)
-@showInst("Or YOU ARE the TROUBLE?",2000)
+@showInst("Oh look you two! Are you having trouble?",1500)
+@showInst("Or maybe YOU ARE the TROUBLE?",1500)
 @shoot(5,1)
 =500
 @shoot(8,2)
@@ -154,11 +157,11 @@
 @showInst("Great, let me repeat:",2000)
 @showInst("To make our country a paradise, you MUST obey me!",2500)
 @showInst("You understand?",2000)
-@showInst("I'll get a large population for this.",2000)
+@showInst("I'll get more people for this.",1000)
 @showInst("Look!",1500)
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
-@showInst("Ok, problem solved. Let's continue.",2000)
+@showInst("Ok, problem solved. Let's continue.",1000)
 @trembleAll()
 @bgm('RoomofAngel.mp3')
 
