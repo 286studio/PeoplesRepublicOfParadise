@@ -1,0 +1,32 @@
+*start
+;==== Current Status ====
+; X  4  X
+; 1 (0) 2
+; X  7  X
+
+;stage4: "Final Fear", Kill: 4 (aging moving), 2, 7, 1
+
+;========= debug only =============
+@bgm('RoomofAngel.mp3')
+@friendAll()
+
+@moveAllMis(0,100,null,[4],[[0,-50]])
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,-100,null,[4],[[0,50]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[4],[[50,0]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[4],[[-50,0]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+

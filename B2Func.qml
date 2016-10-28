@@ -193,9 +193,10 @@ Item {
         // TODO
     }
 
-    function shoot(z, n){
+    function shoot(z, n, keepBgm){
         se('gun1.wav', n)
-        Sound.playBgm()
+        if(!keepBgm)
+            Sound.playBgm()
         var node=image.find(z)
         node.setImageSource('blood2.png')
         image.setZ(z,-z)

@@ -3,5 +3,6 @@
         <file>scripts/stage1.script</file>
         <file>scripts/stage2.script</file>
         <file>scripts/stage3.script</file>
+        <file>scripts/stage4.script</file>
     </qresource>
 </RCC>

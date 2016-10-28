@@ -97,7 +97,7 @@ Item {
 
     // start
     function startStage(){
-        parser.reset('stage1.script')
+        parser.reset('stage4.script')
         parser.run()
     }
 }
