@@ -1,0 +1,87 @@
+*start
+
+*scene1
+*debug
+;========== debug only
+@friendAll()
+;================ start to move again
+;#1
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+;#2 ==========
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,100,null,[3,6],[[-10,-25],[-10,25]])
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,-100,null,[3,6],[[-25,-10],[-25,10]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[3,6],[[-10,-25],[-25,10]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[3,6],[[-25,-10],[-10,25]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+;#3 ==========
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,100,null,[3,6],[[-10,-15],[-10,15]])
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,-100,null,[3,6],[[-15,-10],[-15,10]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[3,6],[[-10,-15],[-15,10]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[3,6],[[-15,-10],[-10,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@shoot(3,1)
+=500
+@shoot(6,2)
+=500
+@showInst("Whaaaaat? You want to run away from your Chairman??", 2000)
+@showInst("Then you deserve this!", 2000)
+@showInst("And I've told you I have enough people!", 3000)
+@friend(3,'one',-100,-100)
+@friend(6,'one',-100,100)
+@showInst("No one is allowed to leave!", 1000)
+

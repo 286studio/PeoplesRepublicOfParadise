@@ -1,5 +1,4 @@
 *start
-@jump('','*debug')
 
 *scene1
 ; ================== Phase 2 ====================
@@ -13,6 +12,93 @@
 
 @showInst("I'll arrange more excited music!",1000)
 @bgm('HappyBirthday.mp3')
+
+; =========== #1
+
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; =========== #2
+
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; =========== #3
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; =========== #4
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
 
 ; =========== #5: starting to "miss"
 ; 3  4  5
@@ -76,75 +162,4 @@
 @trembleAll()
 @bgm('RoomofAngel.mp3')
 
-
-
-*scene2
-*debug
-;========== debug only
-@friendAll()
-;================ start to move again
-;#1
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
-@waitMoveAll()
-
-@moveAll(0,-100)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
-
-@moveAll(-100,0)
-@showArea(-100,0,50)
-@testArea(-100,0,50,4000)
-@waitMoveAll()
-
-@moveAll(100,0)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
-
-;#2
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
-@waitMoveAll()
-
-@moveAll(0,-100)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
-
-@moveAll(-100,0)
-@showArea(-100,0,50)
-@testArea(-100,0,50,4000)
-@waitMoveAll()
-
-@moveAll(100,0)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
-
-;#3 ==========
-; 3  4  5
-; 1 (0) 2
-; 6  7  8
-@moveAllMis(0,100,null,[3,6],[[0,-25],[0,-25]])
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
-@waitMoveAll()
-
-@moveAll(0,-100)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
-
-@moveAll(-100,0)
-@showArea(-100,0,50)
-@testArea(-100,0,50,4000)
-@waitMoveAll()
-
-@moveAll(100,0)
-@showArea(0,0,50)
-@testArea(0,0,50,4000)
-@waitMoveAll()
+@jump('stage3.script', '*start')
