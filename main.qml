@@ -17,7 +17,7 @@ Item {
         anchors.fill: parent
         color: 'gray'
         Image{
-            id: bgImage
+            id: bgParadise
             anchors.fill: parent
             source: 'qrc:/images/paradise-color.jpg'
             visible: false
@@ -28,6 +28,8 @@ Item {
             source: bgParadise
             desaturation: 0.8
             opacity: 0.4
+            Behavior on desaturation {NumberAnimation {duration: 3000}}
+            Behavior on opacity {NumberAnimation {duration: 3000}}
         }
     }
 

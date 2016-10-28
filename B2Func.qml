@@ -11,9 +11,13 @@ Item {
     property int cx: self.width/2
     property int cy: self.height/2
 
+
     function adjustBg(des, opa){
         bgAdjust.desaturation=des
         bgAdjust.opacity=opa
+    }
+    function changeBg(file){
+        bgParadise.source='qrc:/images/'+file
     }
 
     function showInst(msg,t){
