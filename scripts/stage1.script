@@ -3,10 +3,10 @@
 *scene0
 @showInst("Welcome to the People's Republic of Paradise!", 2000)
 @showInst("I am your Chairman.", 2000)
-@showInst("Our country used to be a paradise, but not now.",3000)
+@showInst("Our country used to be a paradise, but not any more.",3000)
 @showInst("Therefore, to make it great again...",3000)
 @showInst("You need to follow my orders.",2000)
-@showInst("Ok, let's have a try:",2000)
+@showInst("Ok, let's try this:",2000)
 @showInst("Move to the area (W,S,A,D).",1000)
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
@@ -20,7 +20,7 @@
 @showArea(25,25,60)
 @testArea(25,25,60,5000)
 @showInst("Great! Quite easy, huh?",2000)
-@showInst("I'll get you two friends for reward.",2500)
+@showInst("As a reward I'll let your two friends join you.",2500)
 @friend(1,'tri','white',-100,0)
 @friend(2,'cir','yellow',100,0)
 =2500
@@ -45,7 +45,7 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@showInst("Very good! Now you dance to please me:",1000)
+@showInst("Very good! Now you will dance to please me:",1000)
 @se('Summer.mp3')
 @moveAll(0,100)
 @showArea(0,100,50)

@@ -22,11 +22,12 @@ Item {
             source: 'qrc:/images/paradise-color.jpg'
             visible: false
         }
+
         Desaturate {
             id: bgAdjust
             anchors.fill: bgParadise
             source: bgParadise
-            desaturation: 0.8
+            desaturation: 0.1
             opacity: 0.4
             Behavior on desaturation {NumberAnimation {duration: 3000}}
             Behavior on opacity {NumberAnimation {duration: 3000}}
