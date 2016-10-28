@@ -1,4 +1,4 @@
-;@jump('stage2.script','*scene2')
+@jump('stage2.script','*start')
 
 *scene0
 @showInst("Welcome to the People's Republic of Paradise!", 2000)

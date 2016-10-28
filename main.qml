@@ -17,12 +17,13 @@ Item {
         anchors.fill: parent
         color: 'gray'
         Image{
-            id: bgParadise
+            id: bgImage
             anchors.fill: parent
             source: 'qrc:/images/paradise-color.jpg'
             visible: false
         }
         Desaturate {
+            id: bgAdjust
             anchors.fill: bgParadise
             source: bgParadise
             desaturation: 0.8

@@ -11,7 +11,10 @@ Item {
     property int cx: self.width/2
     property int cy: self.height/2
 
-    property var deathMask: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    function adjustBg(des, opa){
+        bgAdjust.desaturation=des
+        bgAdjust.opacity=opa
+    }
 
     function showInst(msg,t){
         inst.color='white'
@@ -80,12 +83,20 @@ Item {
         img.x=cx+x
         img.y=cy+y
     }
+    function friendAll(){
+        var shapes=["one","cir","tri"]
+        var colors=["yellow","gray","green","blue","black"]
+        var pos=[[999,999],[-100,0],[100,0],[-100,-100],[0,-100],[100,-100],[-100,100],[0,100],[100,100]]
+        for(var z=1;z<9;z++){
+            var i1=Math.floor(Math.random()*shapes.length)
+            var i2=Math.floor(Math.random()*colors.length)
+            friend(z, shapes[i1], colors[i2], pos[z][0], pos[z][1])
+        }
+    }
 
     // move all series
     property bool isMovingAll: false
     function move(z,tag,x,y,time){
-        if(deathMask[z]===1)
-            return
         image.camera(z,tag+'x',['x', time, Easing.InOutQuad, cx+x])
         image.camera(z,tag+'y',['y', time, Easing.InOutQuad, cy+y])
     }
@@ -94,8 +105,6 @@ Item {
             time=1500
         var firstOne=true
         for(var z=1;z<20;z++){
-            if(deathMask[z]===1)
-                continue
             var node=image.find(z)
             if(!node)
                 continue
@@ -119,8 +128,6 @@ Item {
             time=1500
         var firstOne=true
         for(var z=1;z<20;z++){
-            if(deathMask[z]===1)
-                continue
             var node=image.find(z)
             if(!node)
                 continue
@@ -165,25 +172,38 @@ Item {
             return "moveAll"
     }
 
+
+    Image{
+        id: aimMask
+        source: 'qrc:/images/aimMask.png'
+        visible: false
+    }
+    function aim(z){
+        var node=image.find(z, "*** aim: can NOT find "+z)
+        var nx=node.x
+        var ny=node.y
+        // TODO
+    }
+    function stopAim(){
+        aimMask.visible=false
+        // TODO
+    }
+
     function shoot(z, n){
         se('gun1.wav', n)
         Sound.playBgm()
         var node=image.find(z)
         node.setImageSource('blood2.png')
-        deathMask[z]=1
+        image.setZ(z,-z)
     }
 
     function tremble(z, dx, ds, da){
-        if(deathMask[z]===1)
-            return
         if(!dx) dx=1
         if(!ds) ds=0.01
         if(!da) da=0
         image.tremble(z,dx,ds,da)
     }
     function stopTremble(z){
-        if(deathMask[z]===1)
-            return
         image.stopTremble(z)
     }
     function trembleAll(dx,ds,da){
