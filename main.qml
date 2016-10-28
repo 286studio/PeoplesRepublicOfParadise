@@ -1,4 +1,5 @@
 import QtQuick 2.5
+import QtGraphicalEffects 1.0
 import QtQuick.Controls 2.0
 import QtQuick.Window 2.2
 import B2.Sound 1.0
@@ -15,6 +16,18 @@ Item {
         id: root
         anchors.fill: parent
         color: 'gray'
+        Image{
+            id: bgParadise
+            anchors.fill: parent
+            source: 'qrc:/images/paradise-color.jpg'
+            visible: false
+        }
+        Desaturate {
+            anchors.fill: bgParadise
+            source: bgParadise
+            desaturation: 0.8
+            opacity: 0.4
+        }
     }
 
     // start button

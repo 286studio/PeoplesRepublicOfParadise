@@ -12,5 +12,6 @@
         <file>images/cir.png</file>
         <file>sounds/Summer.mp3</file>
         <file>sounds/HappyBirthday.mp3</file>
+        <file>images/paradise-color.jpg</file>
     </qresource>
 </RCC>
