@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sounds/gun3.wav</file>
+        <file>sounds/gun2.wav</file>
+        <file>sounds/gun1.wav</file>
+        <file>sounds/RoomofAngel.mp3</file>
+        <file>images/one.png</file>
+        <file>images/blood3.png</file>
+        <file>images/blood2.png</file>
+        <file>images/blood1.png</file>
+        <file>images/tri.png</file>
+        <file>images/cir.png</file>
+        <file>sounds/Summer.mp3</file>
+        <file>sounds/HappyBirthday.mp3</file>
+    </qresource>
+</RCC>

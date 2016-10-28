@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>B2Parser.qml</file>
+        <file>B2Notification.qml</file>
+        <file>B2Func.qml</file>
+        <file>You.qml</file>
+        <file>B2Sound.qml</file>
+        <file>B2TextFont.qml</file>
+        <file>B2Image.qml</file>
+    </qresource>
+</RCC>

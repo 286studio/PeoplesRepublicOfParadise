@@ -1,0 +1,206 @@
+@jump('*scene2')
+
+*scene0
+@showInst("Welcome to the People's Republic of Paradise!", 2000)
+@showInst("I am your Chairman.", 2000)
+@showInst("Our country used to be a paradise, but not now.",3000)
+@showInst("Therefore, to make it great again...",3000)
+@showInst("You need to follow my orders.",2000)
+@showInst("Ok, let's have a try:",2000)
+@showInst("Move to the area (W,S,A,D).",1000)
+@showArea(100,100,75)
+@testArea(100,100,75,99999999)
+@showInst("Good. Now do it quickly",1000)
+@showArea(-50,-50,75)
+@testArea(-50,-50,75,99999999)
+
+*scene1
+; =========== Phase1: friends =============
+@showInst("And once more:",1000)
+@showArea(25,25,60)
+@testArea(25,25,60,5000)
+@showInst("Great! Quite easy, huh?",2000)
+@showInst("I'll get you two friends for reward.",2500)
+@friend(1,'tri','white',-100,0)
+@friend(2,'cir','yellow',100,0)
+=2500
+
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@showInst("Very good! Now you dance to please me:",1000)
+@se('Summer.mp3')
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+*scene2
+; ================== Phase 2 ====================
+@showInst("Excellent! All people must dance to praise me!",2000)
+@friend(3,'tri','white',-100,-100)
+@friend(4,'cir','yellow',0,-100)
+@friend(5,'tri','white',100,-100)
+@friend(6,'tri','white',-100,100)
+@friend(7,'cir','yellow',0,100)
+@friend(8,'tri','white',100,100)
+
+@showInst("I'll arrange more excited music!",1000)
+@bgm('HappyBirthday.mp3')
+
+; =========== #1
+
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; =========== #5: starting to "miss"
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,100,null,[5,8],[[10,-10],[10,10]])
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,-100,null,[5,8],[[-20,-15],[-15,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[5,8],[[-5,30],[15,-20]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[5,8],[[15,-15],[15,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; =========== #6
+@moveAllMis(0,100,null,[5,8],[[-10,10],[-5,10]])
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,-100,null,[5,8],[[15,-10],[-5,5]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[5,8],[[-10,-5],[-15,-20]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[5,8],[[-18,25],[-30,-25]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@showInst("Oh look you two! Are you having troubles?",2000)
+@showInst("Or YOU ARE the TROUBLE?",2000)
+@shoot(5,1)
+=500
+@shoot(8,2)
+=500
+@showInst("Great, let me repeat:",2000)
+@showInst("To make our country a paradise, you MUST obey me!",2500)
+@showInst("You understand?",2000)
+@showInst("I'll get a large population for this.",2000)
+@showInst("Look!",1500)
+@friend(15,'one','white',100,-100)
+@friend(18,'one','white',100,100)
+@showInst("Ok, problem solved. Let's continue.",2000)
+@trembleAll()
+@bgm('RoomofAngel.mp3')
+;================ start to move again
+@moveAll(0,100)
+@showArea(0,100,50)
+@testArea(0,100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,-100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
