@@ -211,8 +211,9 @@ Item {
     }
 
 
-    function jump(scene){
-        parser.jump('',scene)
+    function jump(file,scene){
+        if(!file) file=''
+        parser.jump(file,scene)
     }
 
     function gameOver(){

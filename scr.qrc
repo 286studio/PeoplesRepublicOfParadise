@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>scripts/stage1.script</file>
+        <file>scripts/stage2.script</file>
     </qresource>
 </RCC>

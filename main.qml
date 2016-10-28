@@ -19,7 +19,7 @@ Item {
 
     // start button
     Button{
-        text: 'start'
+        text: 'Reset'
         z: 100
     }
     Component.onCompleted: {
