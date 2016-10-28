@@ -1,7 +1,7 @@
-@jump('stage2.script','*start')
+;@jump('stage2.script','*start')
 
 *scene0
-@showInst("Welcome to the People's Republic of Paradise!", 2000)
+@showInst("Welcome to the People's Republic of Paradise!", 3000)
 @showInst("I am your Chairman.", 2000)
 @showInst("Our country used to be a paradise, but not any more.",3000)
 @showInst("Therefore, to make it great again...",3000)
