@@ -60,7 +60,7 @@ Item {
                 timeUp()
             }
             var dist=Math.sqrt((you.x-xx)*(you.x-xx)+(you.y-yy)*(you.y-yy))
-            if(dist<rr-10){
+            if(dist<rr){
                 areaTimer.stop()
                 circle.visible=false
                 Notification.notify("testArea")
@@ -248,7 +248,7 @@ Item {
     function gameOver(){
         Sound.playBgm()
         Sound.playSe('gun1.wav')
-        you.source='qrc:/images/blood1.png'
+        you.die()
         showInst("Game Over",9999999);
     }
 }

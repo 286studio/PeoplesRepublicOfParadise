@@ -1,5 +1,9 @@
 ;@jump('stage2.script','*start')
 
+@showArea(25,25,60)
+@testArea(25,25,60,2000)
+=20000
+
 *scene0
 @showInst("Welcome to the People's Republic of Paradise!", 3000)
 @showInst("I am your Chairman.", 2000)
