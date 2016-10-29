@@ -1,8 +1,5 @@
 ;@jump('stage2.script','*start')
 
-@showArea(25,25,60)
-@testArea(25,25,60,2000)
-=20000
 
 *scene0
 @showInst("Welcome to the People's Republic of Paradise!", 3000)
@@ -15,14 +12,14 @@
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
 @showInst("Good. Now do it quickly",1000)
-@showArea(-50,-50,75)
-@testArea(-50,-50,75,99999999)
+@showArea(-100,-50,75)
+@testArea(-100,-50,75,99999999)
 
 *scene1
 ; =========== Phase1: friends =============
 @showInst("And once more:",1000)
 @showArea(25,25,60)
-@testArea(25,25,60,5000)
+@testArea(25,25,60,99999999)
 @showInst("Great! Quite easy, huh?",2000)
 @showInst("As a reward I'll let your two friends join you.",2500)
 @friend(1,'tri','white',-100,0)
@@ -31,65 +28,65 @@
 
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @showInst("Very good! Now you will dance to please me:",1500)
 @se('Summer.mp3')
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @showInst("",15)
 
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 @jump('stage2.script','*start')

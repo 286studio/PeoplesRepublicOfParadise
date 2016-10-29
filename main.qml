@@ -77,9 +77,19 @@ Item {
         text: "Fear III "
         x: 100
         y: 200
-        color: 'white'
         font.pixelSize: 40
+        color: 'white'
         z: 10
+        Text{
+            id: instShadow
+            x: 1
+            y: 1
+            z: -1
+            font.pixelSize: inst.font.pixelSize
+            color: 'black'
+            text: inst.text
+            opacity: 0.7
+        }
     }
 
     // You

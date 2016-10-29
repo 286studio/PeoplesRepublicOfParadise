@@ -25,7 +25,6 @@ Item {
     }
 
     function showInst(msg,t){
-        inst.color='white'
         inst.text=msg
         if(t)
             return t;
@@ -202,6 +201,7 @@ Item {
         if(!keepBgm)
             Sound.playBgm()
         var node=image.find(z)
+        stopTremble(z)
         node.setImageSource('blood2.png')
         image.setZ(z,-z)
     }

@@ -17,22 +17,22 @@
 
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 ; =========== #2
@@ -40,64 +40,64 @@
 
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 ; =========== #3
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 ; =========== #4
 @moveAll(0,100)
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAll(0,-100)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(-100,0)
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAll(100,0)
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 
@@ -107,49 +107,49 @@
 ; 6  7  8
 @moveAllMis(0,100,null,[5,8],[[10,-10],[10,10]])
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAllMis(0,-100,null,[5,8],[[-20,-15],[-15,15]])
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @moveAllMis(-100,0,null,[5,8],[[-5,30],[15,-20]])
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAllMis(100,0,null,[5,8],[[15,-15],[15,15]])
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 ; =========== #6
 @moveAllMis(0,100,null,[5,8],[[-10,10],[-5,10]])
 @showArea(0,100,50)
-@testArea(0,100,50,4000)
+@testArea(0,100,50,99999999)
 @waitMoveAll()
 
 @moveAllMis(0,-100,null,[5,8],[[15,-10],[-5,5]])
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @showInst("You there! Dance better!",1000)
 
 @moveAllMis(-100,0,null,[5,8],[[-10,-5],[-15,-20]])
 @showArea(-100,0,50)
-@testArea(-100,0,50,4000)
+@testArea(-100,0,50,99999999)
 @waitMoveAll()
 
 @moveAllMis(100,0,null,[5,8],[[-18,25],[-30,-25]])
 @showArea(0,0,50)
-@testArea(0,0,50,4000)
+@testArea(0,0,50,99999999)
 @waitMoveAll()
 
 @showInst("Oh look you two! Are you having trouble?",1500)
-@showInst("Or maybe YOU ARE the TROUBLE?",1500)
+@showInst("Or maybe YOU ARE the TROUBLE?",2000)
 @shoot(5,1)
 =500
 @shoot(8,2)
@@ -162,7 +162,7 @@
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
 @showInst("Ok, problem solved. Let's continue.",1000)
-@trembleAll()
+@trembleAll(1,0.01)
 @bgm('RoomofAngel.mp3')
 
 @jump('stage3.script', '*start')
