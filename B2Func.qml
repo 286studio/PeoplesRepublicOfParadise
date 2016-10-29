@@ -182,7 +182,6 @@ Item {
             return "moveAll"
     }
 
-
     Image{
         id: aimMask
         source: 'qrc:/images/aimMask.png'
@@ -203,10 +202,13 @@ Item {
         se('gun1.wav', n)
         if(!keepBgm)
             Sound.playBgm()
-        var node=image.find(z)
-        stopTremble(z)
-        node.setImageSource('blood2.png')
-        image.setZ(z,-z)
+        var x=image.find(z).x
+        var y=image.find(z).y
+        image.remove(z)
+        var filename='blood'+ (1+Math.floor(Math.random()*2.9)) +'.png'
+        var blood=image.image(-z,'blood2.png')
+        blood.x=x
+        blood.y=y
     }
 
     function tremble(z, dx, ds, da){
@@ -214,9 +216,6 @@ Item {
         if(!ds) ds=0.01
         if(!da) da=0
         image.tremble(z,dx,ds,da)
-    }
-    function stopTremble(z){
-        image.stopTremble(z)
     }
     function trembleAll(dx,ds,da){
         for(var i=1;i<20;i++)

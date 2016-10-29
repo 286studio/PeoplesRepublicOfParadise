@@ -262,7 +262,7 @@ Item {
         }
     }
     function image(z,file,cc){
-        assert(z>=1,'image.image(): z MUST>=1')
+        assert(z!==0,'image.image(): z MUST>=1')
         // remove same z
         remove(find(z))
         // check file
@@ -479,14 +479,6 @@ Item {
         // create animation
         var trem=compTremble.createObject(node, {'target':node,'dx':dx,'ds':ds, 'da':da})
         trem.restart()
-    }
-    function stopTremble(zOrNode){
-        assert(zOrNode && typeof zOrNode !== 'number' || zOrNode>=1, 'camera(): zOrNode must be non-null or >=1')
-        var node=zOrNode
-        if(typeof node === 'number') node=find(node, '***stopTremble: can NOT find '+zOrNode)
-        // stop trembling
-        if(node.ti)
-            node.ti.stop()
     }
 
     Component{
