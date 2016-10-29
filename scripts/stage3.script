@@ -1,9 +1,12 @@
 *start
-;==== Current Status ====
+;==== 111Current Status ====
 ; 3  4  X
 ; 1 (0) 2
 ; 6  7  X
 ; stage3: "Run Away". Kills: 3 (fleeing), 6 (fleeing)
+
+*debug
+@friendAll()
 
 ;================ start to move again
 ;#1
@@ -31,17 +34,17 @@
 ; 3  4  5
 ; 1 (0) 2
 ; 6  7  8
-@moveAllMis(0,100,null,[3,6],[[-10,-15],[-10,15]])
+@moveAllMis(0,100,null,[3],[[-10,-15]])
 @showArea(0,100,50)
 @testArea(0,100,50,4000)
 @waitMoveAll()
 
-@moveAllMis(0,-100,null,[3,6],[[-15,-10],[-15,10]])
+@moveAllMis(0,-100,null,[3],[[-15,-10]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@moveAllMis(-100,0,null,[3,6],[[-10,-15],[-15,10]])
+@moveAllMis(-100,0,null,[3,],[[-10,-15]])
 @showArea(-100,0,50)
 @testArea(-100,0,50,4000)
 @waitMoveAll()
@@ -84,6 +87,8 @@
 @testArea(0,100,50,4000)
 @waitMoveAll()
 
+
+
 @moveAllMis(0,-100,null,[3,6],[[-25,-20],[-45,10]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
@@ -99,14 +104,16 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-
+@showInst("Whaaaaat? You want to run away from your Chairman??", 2000)
+@showInst("Then you deserve this!", 2000)
+@move(3,'',-350, -350, 500)
+=500
 @shoot(3,1,true)
 =500
 @shoot(6,2,true)
 =500
-@showInst("Whaaaaat? You want to run away from your Chairman??", 2000)
-@showInst("Then you deserve this!", 2000)
-@showInst("And I've told you I have enough people!", 3000)
+
+@showInst("I've told you I have enough people!", 3000)
 @friend(3,'one','black', -100,-100)
 @friend(6,'one','black', -100,100)
 @showInst("No one is allowed to leave!", 1500)
