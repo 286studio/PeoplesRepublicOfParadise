@@ -21,11 +21,7 @@
 @showArea(25,25,60)
 @testArea(25,25,60,99999999)
 @showInst("Great! Quite easy, huh?",2000)
-<<<<<<< Updated upstream
-@showInst("As a reward I brought your two friends to join you.",2500)
-=======
-@showInst("As a reward, I'll let your two friends join you.",3000)
->>>>>>> Stashed changes
+@showInst("As a reward I'll bring your two friends to join you.",3000)
 @friend(1,'tri','white',-100,0)
 @friend(2,'cir','yellow',100,0)
 =2500
@@ -51,12 +47,12 @@
 @waitMoveAll()
 
 @showInst("Very good! Now you dance to please me:",1500)
-@se('Summer.mp3')
 @moveAll(0,100)
 @showArea(0,100,50)
 @testArea(0,100,50,99999999)
 @waitMoveAll()
 
+@se('Summer.mp3')
 @moveAll(0,-100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
