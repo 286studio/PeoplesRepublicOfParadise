@@ -11,6 +11,37 @@ Item {
     height: 640
     focus: true
 
+    Rectangle{
+        id: headPhoneMask
+        anchors.fill: parent
+        color: 'black'
+        z: 9999
+        opacity: 1
+        Behavior on opacity {NumberAnimation {duration:2500}}
+    }
+    Text{
+        id: headPhoneText
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: 250
+        text: "For better effect, please use headphones."
+        font.pixelSize: 35
+        color: 'white'
+        z: 10000
+        Behavior on opacity {NumberAnimation {duration:1000}}
+    }
+    Button{
+        id: headPhoneOk
+        text: 'Ok'
+        anchors.centerIn: parent
+        onClicked: {
+            headPhoneMask.opacity=0
+            headPhoneText.opacity=0
+            startStage()
+            visible=false
+        }
+        z:10001
+    }
+
     // root bg
     Rectangle{
         id: root
@@ -32,15 +63,6 @@ Item {
             Behavior on desaturation {NumberAnimation {duration: 3000}}
             Behavior on opacity {NumberAnimation {duration: 3000}}
         }
-    }
-
-    // start button
-    Button{
-        text: 'Reset'
-        z: 100
-    }
-    Component.onCompleted: {
-        startStage()
     }
 
     // key events

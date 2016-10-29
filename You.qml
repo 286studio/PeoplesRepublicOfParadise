@@ -17,8 +17,14 @@ Image{
             if(dead) return
             x+=vel[0]
             y+=vel[1]
+            confineInBound()
         }
     }
+    function confineInBound(){
+        x=Math.max(100,Math.min(x,760))
+        y=Math.max(200,Math.min(y,500))
+    }
+
     function setVel(vx,vy){
         if(dead) return
         if(vx===0 && vy===0){

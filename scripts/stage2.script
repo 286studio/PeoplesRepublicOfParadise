@@ -2,7 +2,7 @@
 
 *scene1
 ; ================== Phase 2 ====================
-@showInst("Excellent! All people must dance to praise me!",1500)
+@showInst("Excellent! All people must dance to praise me!",2000)
 @friend(3,'tri','white',-100,-100)
 @friend(4,'cir','yellow',0,-100)
 @friend(5,'tri','white',100,-100)

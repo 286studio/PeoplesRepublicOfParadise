@@ -2,7 +2,7 @@
 
 
 *scene0
-@showInst("Welcome to the People's Republic of Paradise!", 3000)
+@showInst("Welcome to the People's Republic of Paradise!", 4500)
 @showInst("I am your Chairman.", 2000)
 @showInst("Our country used to be a paradise, but not any more.",3000)
 @showInst("Therefore, to make it great again...",3000)
@@ -12,8 +12,8 @@
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
 @showInst("Good. Now do it quickly",1000)
-@showArea(-100,-50,75)
-@testArea(-100,-50,75,99999999)
+@showArea(-100,-70,75)
+@testArea(-100,-70,75,99999999)
 
 *scene1
 ; =========== Phase1: friends =============

@@ -23,6 +23,9 @@ Item {
     function maskIn(){
         mask.opacity=1
     }
+    function maskOut(){
+        mask.opacity=0
+    }
 
     function showInst(msg,t){
         inst.text=msg
