@@ -46,7 +46,6 @@ Item {
     // key events
     property var directions: [0,0,0,0]
     Keys.onPressed: function(e){
-        console.log(e.key)
         e.accepted=true
         if(e.key===Qt.Key_W)
             directions[0]=1
@@ -86,6 +85,15 @@ Item {
     // You
     You{id: you}
 
+    // the mask above all
+    Rectangle{
+        id: mask
+        anchors.fill: parent
+        color: 'black'
+        opacity: 0
+        z: 9999
+        Behavior on opacity {NumberAnimation {duration: 2500}}
+    }
 
     // image mod
     B2Image{id: image}
@@ -97,7 +105,7 @@ Item {
 
     // start
     function startStage(){
-        parser.reset('stage3.script')
+        parser.reset('stage5.script')
         parser.run()
     }
 }

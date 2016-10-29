@@ -20,6 +20,10 @@ Item {
         bgParadise.source='qrc:/images/'+file
     }
 
+    function maskIn(){
+        mask.opacity=1
+    }
+
     function showInst(msg,t){
         inst.color='white'
         inst.text=msg

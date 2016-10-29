@@ -1,0 +1,41 @@
+*start
+;==== Current Status ====
+; X  X  X
+; 1 (0) 2
+; X  7  X
+
+;stage5: "New Generation", Kill: 1 (trembling), 2 (trembling), 7 (trembling)
+
+
+*debug
+@bgm('RoomofAngel.mp3')
+@friendAll()
+
+; ----------------- S5 #1 --------------------
+@showInst("Now, keep on moving!",2000)
+@showInst("......",2000)
+@showInst("Why?",2000)
+@showInst("Why are you trembling?",2000)
+@showInst("I am your Chairman! And...",2000)
+@shoot(1, 1, true)
+@showInst("Your",600)
+@shoot(2, 2, true)
+@showInst("Merciful",600)
+@shoot(7, 3, true)
+@showInst("Father!",2000)
+@showInst("Good kids never fear their parents, yeh?",2000)
+@showInst("That's why we need new generation.",2000)
+
+@friend(1,'one','black',-100,0)
+@friend(2,'one','black',100,0)
+@friend(7,'one','black',0,100)
+
+@showInst("Look, I love this so much!", 2000)
+@showInst("A complete new generation!", 2000)
+@showInst("For", 1000)
+@showInst("My", 1000)
+@showInst("Paradise!",100)
+=1000
+
+@maskIn()
+
