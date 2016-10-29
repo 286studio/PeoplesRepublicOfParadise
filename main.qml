@@ -105,7 +105,7 @@ Item {
 
     // start
     function startStage(){
-        parser.reset('stage5.script')
+        parser.reset('stage1.script')
         parser.run()
     }
 }

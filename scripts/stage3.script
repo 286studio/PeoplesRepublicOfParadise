@@ -5,8 +5,6 @@
 ; 6  7  X
 ; stage3: "Run Away". Kills: 3 (fleeing), 6 (fleeing)
 
-*debug
-@friendAll()
 
 ;================ start to move again
 ;#1

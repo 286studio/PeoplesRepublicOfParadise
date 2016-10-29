@@ -7,9 +7,6 @@
 ;stage5: "New Generation", Kill: 1 (trembling), 2 (trembling), 7 (trembling)
 
 
-*debug
-@bgm('RoomofAngel.mp3')
-@friendAll()
 
 ; ----------------- S5 #1 --------------------
 @showInst("Now, keep on moving!",2000)
