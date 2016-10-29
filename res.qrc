@@ -15,5 +15,8 @@
         <file>images/paradise-color.jpg</file>
         <file>images/aimMask.png</file>
         <file>images/circleMask.png</file>
+        <file>images/hell-fire.jpg</file>
+        <file>images/hell-bricks.jpg</file>
+        <file>images/hell-neutral.png</file>
     </qresource>
 </RCC>
