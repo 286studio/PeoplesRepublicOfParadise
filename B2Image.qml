@@ -483,9 +483,10 @@ Item {
     function stopTremble(zOrNode){
         assert(zOrNode && typeof zOrNode !== 'number' || zOrNode>=1, 'camera(): zOrNode must be non-null or >=1')
         var node=zOrNode
-        if(typeof node === 'number') node=find(node)
+        if(typeof node === 'number') node=find(node, '***stopTremble: can NOT find '+zOrNode)
         // stop trembling
-        node.ti.stop()
+        if(node.ti)
+            node.ti.stop()
     }
 
     Component{

@@ -28,6 +28,8 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
+@adjustBg(0.45,0.4)
+
 ;#2 ==========
 ; 3  4  5
 ; 1 (0) 2
@@ -76,6 +78,7 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
+@adjustBg(0.5,0.35)
 ;#4 ==========
 ; 3  4  5
 ; 1 (0) 2
@@ -108,13 +111,20 @@
 =500
 
 @shoot(3,1,true)
-=500
+@adjustBg(0.55,0.3)
+=350
 @move(6,'',150, 150, 300)
-=500
+=350
 @shoot(6,2,true)
+@adjustBg(0.65,0.3)
+
 =500
 
+<<<<<<< Updated upstream
 @showInst("I will bring in new little friends!", 3000)
+=======
+@showInst("Bring me more dancers!", 3000)
+>>>>>>> Stashed changes
 @friend(3,'one','black', -100,-100)
 @friend(6,'one','black', -100,100)
 @showInst("No one is allowed to leave!", 1500)

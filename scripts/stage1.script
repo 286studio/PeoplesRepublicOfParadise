@@ -6,12 +6,12 @@
 @showInst("I am your Chairman.", 2000)
 @showInst("Our country used to be a paradise, but not any more.",3000)
 @showInst("Therefore, to make it great again...",3000)
-@showInst("You need to follow my orders.",2000)
+@showInst("All you need is to follow my orders.",2500)
 @showInst("Ok, let's try this:",2000)
 @showInst("Move to the area (W,S,A,D).",1000)
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
-@showInst("Good. Now do it quickly",1000)
+@showInst("Good. Now do it quickly.",1000)
 @showArea(-100,-70,75)
 @testArea(-100,-70,75,99999999)
 
@@ -21,7 +21,11 @@
 @showArea(25,25,60)
 @testArea(25,25,60,99999999)
 @showInst("Great! Quite easy, huh?",2000)
+<<<<<<< Updated upstream
 @showInst("As a reward I brought your two friends to join you.",2500)
+=======
+@showInst("As a reward, I'll let your two friends join you.",3000)
+>>>>>>> Stashed changes
 @friend(1,'tri','white',-100,0)
 @friend(2,'cir','yellow',100,0)
 =2500
@@ -46,7 +50,7 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
-@showInst("Very good! Now you will dance to please me:",1500)
+@showInst("Very good! Now you dance to please me:",1500)
 @se('Summer.mp3')
 @moveAll(0,100)
 @showArea(0,100,50)

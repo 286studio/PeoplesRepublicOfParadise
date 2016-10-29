@@ -15,24 +15,39 @@
 @showInst("Why are you trembling?",2000)
 @showInst("I am your Chairman! And...",2000)
 @shoot(1, 1, true)
+@adjustBg(0.85,0.25)
 @showInst("Your",600)
 @shoot(2, 2, true)
+@adjustBg(0.9,0.2)
 @showInst("Merciful",600)
 @shoot(7, 3, true)
+@adjustBg(0.9,0.1)
 @showInst("Father!",2000)
+<<<<<<< Updated upstream
 @showInst("Good kids never fear their parents, yes?",2000)
+=======
+@showInst("Good kids never fear their parents, right?",3000)
+>>>>>>> Stashed changes
 @showInst("That's why we need a new generation.",2000)
 
 @friend(1,'one','black',-100,0)
 @friend(2,'one','black',100,0)
 @friend(7,'one','black',0,100)
 
+<<<<<<< Updated upstream
 @showInst("Look! I love this so much!", 2000)
 @showInst("A completly new generation!", 2000)
+=======
+@showInst("Look! I love this so much!", 2500)
+@showInst("A completly new generation!", 2500)
+@adjustBg(0.9,0.1)
+>>>>>>> Stashed changes
 @showInst("For", 1000)
+@adjustBg(0.9,0)
+@changeBg('hell-fire.jpg')
 @showInst("My", 1000)
+@adjustBg(0.1,0.8)
 @showInst("Paradise!",100)
-=1000
+=2500
 
 @maskIn()
-

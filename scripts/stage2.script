@@ -2,7 +2,7 @@
 
 *scene1
 ; ================== Phase 2 ====================
-@showInst("Excellent! All people must dance to praise me!",2000)
+@showInst("Excellent! All my people, dance to praise me!",2000)
 @friend(3,'tri','white',-100,-100)
 @friend(4,'cir','yellow',0,-100)
 @friend(5,'tri','white',100,-100)
@@ -136,7 +136,7 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
-@showInst("You there! Dance better!",1000)
+@showInst("You there! Dance better!",1200)
 
 @moveAllMis(-100,0,null,[5,8],[[-10,-5],[-15,-20]])
 @showArea(-100,0,50)
@@ -148,21 +148,24 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
-@showInst("Oh look you two! Are you having trouble?",1500)
-@showInst("Or maybe YOU ARE the TROUBLE?",2000)
+@showInst("Oh look you two! Are you having trouble?",2000)
+@showInst("Or maybe YOU ARE the TROUBLE?",2400)
 @shoot(5,1)
+@adjustBg(0.2,0.55)
 =500
 @shoot(8,2)
+@adjustBg(0.3,0.5)
 =500
 @showInst("Great, let me repeat:",2000)
 @showInst("To make our country a paradise, you MUST obey me!",2500)
 @showInst("You understand?",2000)
-@showInst("I'll get more people for this.",1000)
+@showInst("I'll get more people for this.",1500)
 @showInst("Look!",1500)
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
-@showInst("Ok, problem solved. Let's continue.",1000)
+@showInst("Ok, problem solved. Let's continue.",1500)
 @trembleAll(1,0.01)
 @bgm('RoomofAngel.mp3')
+@adjustBg(0.4,0.45)
 
 @jump('stage3.script', '*start')

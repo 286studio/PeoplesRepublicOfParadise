@@ -53,13 +53,12 @@ Item {
             source: 'qrc:/images/paradise-color.jpg'
             visible: false
         }
-
         Desaturate {
             id: bgAdjust
             anchors.fill: bgParadise
             source: bgParadise
             desaturation: 0.1
-            opacity: 0.4
+            opacity: 0.6
             Behavior on desaturation {NumberAnimation {duration: 3000}}
             Behavior on opacity {NumberAnimation {duration: 3000}}
         }
@@ -125,6 +124,12 @@ Item {
         opacity: 0
         z: 9999
         Behavior on opacity {NumberAnimation {duration: 2500}}
+        Text{
+            anchors.centerIn: parent
+            text: "The End"
+            font.pixelSize: 35
+            color: 'white'
+        }
     }
 
     // image mod
