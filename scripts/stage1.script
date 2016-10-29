@@ -1,6 +1,5 @@
 ;@jump('stage2.script','*start')
 
-
 *scene0
 @showInst("Welcome to the People's Republic of Paradise!", 4500)
 @showInst("I am your Chairman.", 2000)
