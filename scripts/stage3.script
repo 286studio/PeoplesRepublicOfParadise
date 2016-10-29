@@ -114,7 +114,7 @@
 @shoot(6,2,true)
 =500
 
-@showInst("I've told you I have enough people!", 3000)
+@showInst("I will bring in new little friends!", 3000)
 @friend(3,'one','black', -100,-100)
 @friend(6,'one','black', -100,100)
 @showInst("No one is allowed to leave!", 1500)
