@@ -11,6 +11,8 @@ Item {
     height: 640
     focus: true
 
+    FontLoader{id:myFont; source:'qrc:/fonts/Crimson-Roman.otf'}
+
     Rectangle{
         id: headPhoneMask
         anchors.fill: parent
@@ -24,7 +26,8 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         y: 250
         text: "For better effect, please use headphones."
-        font.pixelSize: 35
+        font.family: myFont.name
+        font.pixelSize: 40
         color: 'white'
         z: 10000
         Behavior on opacity {NumberAnimation {duration:1000}}
@@ -98,6 +101,7 @@ Item {
         text: "Fear III "
         x: 100
         y: 175
+        font.family: myFont.name
         font.pixelSize: 40
         color: 'white'
         z: 10
@@ -106,6 +110,7 @@ Item {
             x: 1
             y: 1
             z: -1
+            font.family: myFont.name
             font.pixelSize: inst.font.pixelSize
             color: 'black'
             text: inst.text

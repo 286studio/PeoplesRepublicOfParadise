@@ -9,7 +9,7 @@ Item {
 
     // the center pos
     property int cx: self.width*0.5
-    property int cy: self.height*0.6
+    property int cy: self.height*0.55
 
 
     function adjustBg(des, opa){
