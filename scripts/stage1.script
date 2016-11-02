@@ -25,12 +25,12 @@
 @friend(2,'cir','yellow',100,0)
 =2500
 
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -46,13 +46,13 @@
 @waitMoveAll()
 
 @showInst("Very good! Now you dance to please me:",1500)
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
 @se('Summer.mp3')
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -69,12 +69,12 @@
 
 @showInst("",15)
 
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()

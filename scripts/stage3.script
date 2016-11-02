@@ -8,12 +8,12 @@
 
 ;================ start to move again
 ;#1
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
@@ -34,12 +34,12 @@
 ; 3  4  5
 ; 1 (0) 2
 ; 6  7  8
-@moveAllMis(0,100,null,[3],[[-10,-15]])
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
+@moveAllMis(0,-100,null,[3],[[-10,-15]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
 @waitMoveAll()
 
-@moveAllMis(0,-100,null,[3],[[-15,-10]])
+@moveAllMis(0,100,null,[3],[[-15,-10]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
@@ -58,12 +58,12 @@
 ; 3  4  5
 ; 1 (0) 2
 ; 6  7  8
-@moveAllMis(0,100,null,[3,6],[[-10,-15],[-10,15]])
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
+@moveAllMis(0,-100,null,[3,6],[[-10,-15],[-10,15]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
 @waitMoveAll()
 
-@moveAllMis(0,-100,null,[3,6],[[-15,-10],[-15,10]])
+@moveAllMis(0,100,null,[3,6],[[-15,-10],[-15,10]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
@@ -83,14 +83,12 @@
 ; 3  4  5
 ; 1 (0) 2
 ; 6  7  8
-@moveAllMis(0,100,null,[3,6],[[-30,-35],[-30,-10]])
-@showArea(0,100,50)
-@testArea(0,100,50,4000)
+@moveAllMis(0,-100,null,[3,6],[[-30,-35],[-30,-10]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
 @waitMoveAll()
 
-
-
-@moveAllMis(0,-100,null,[3,6],[[-25,-20],[-45,10]])
+@moveAllMis(0,100,null,[3,6],[[-25,-20],[-45,10]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
@@ -107,14 +105,13 @@
 
 @showInst("Whaaat? You want to run away from your Chairman??", 2500)
 @showInst("Then you deserve this!", 2000)
-@move(3,'',-350, -350, 500)
-=500
-
+@move(3,'',-450, -350, 400)
+=410
 @shoot(3,1,true)
 @adjustBg(0.55,0.3)
 =350
-@move(6,'',150, 150, 300)
-=350
+@move(6,'',250, 150, 300)
+=310
 @shoot(6,2,true)
 @adjustBg(0.65,0.3)
 

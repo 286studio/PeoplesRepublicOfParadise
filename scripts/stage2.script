@@ -10,17 +10,17 @@
 @friend(7,'cir','yellow',0,100)
 @friend(8,'tri','white',100,100)
 
-@showInst("I'll arrange for more excited music!",1500)
+@showInst("I'll arrange for more exciting music!",1500)
 @bgm('HappyBirthday.mp3')
 
 ; =========== #1
 
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -38,12 +38,12 @@
 ; =========== #2
 @showInst(" ",10)
 
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -59,12 +59,12 @@
 @waitMoveAll()
 
 ; =========== #3
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -80,12 +80,12 @@
 @waitMoveAll()
 
 ; =========== #4
-@moveAll(0,100)
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAll(0,-100)
+@moveAll(0,100)
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -105,12 +105,12 @@
 ; 3  4  5
 ; 1 (0) 2
 ; 6  7  8
-@moveAllMis(0,100,null,[5,8],[[10,-10],[10,10]])
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAllMis(0,-100,null,[5,8],[[10,-10],[10,10]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAllMis(0,-100,null,[5,8],[[-20,-15],[-15,15]])
+@moveAllMis(0,100,null,[5,8],[[-20,-15],[-15,15]])
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -126,12 +126,12 @@
 @waitMoveAll()
 
 ; =========== #6
-@moveAllMis(0,100,null,[5,8],[[-10,10],[-5,10]])
-@showArea(0,100,50)
-@testArea(0,100,50,99999999)
+@moveAllMis(0,-100,null,[5,8],[[-10,10],[-5,10]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,99999999)
 @waitMoveAll()
 
-@moveAllMis(0,-100,null,[5,8],[[15,-10],[-5,5]])
+@moveAllMis(0,100,null,[5,8],[[15,-10],[-5,5]])
 @showArea(0,0,50)
 @testArea(0,0,50,99999999)
 @waitMoveAll()
@@ -159,10 +159,11 @@
 @showInst("Great, let me repeat:",2000)
 @showInst("To make our country a paradise, you MUST obey me!",2500)
 @showInst("You understand?",2000)
-@showInst("I'll get more people for this.",1500)
+@showInst("I'll get more people on this.",1500)
 @showInst("Look!",1500)
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
+=500
 @showInst("Ok, problem solved. Let's continue.",1500)
 @trembleAll(1,0.01)
 @bgm('RoomofAngel.mp3')

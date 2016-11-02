@@ -97,7 +97,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         text: "Fear III "
         x: 100
-        y: 200
+        y: 175
         font.pixelSize: 40
         color: 'white'
         z: 10
@@ -112,9 +112,6 @@ Item {
             opacity: 0.7
         }
     }
-
-    // You
-    You{id: you}
 
     // the mask above all
     Rectangle{
@@ -139,6 +136,8 @@ Item {
     // function mod
     B2Func{ id:func }
 
+    // You
+    You{id: you}
 
     // start
     function startStage(){

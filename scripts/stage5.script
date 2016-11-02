@@ -39,6 +39,6 @@
 @showInst("My", 1000)
 @adjustBg(0.1,0.8)
 @showInst("Paradise!",2000)
-=2500
+=3000
 
 @maskIn()

@@ -8,8 +8,8 @@ Item {
     anchors.fill: parent
 
     // the center pos
-    property int cx: self.width/2
-    property int cy: self.height/2
+    property int cx: self.width*0.5
+    property int cy: self.height*0.6
 
 
     function adjustBg(des, opa){
