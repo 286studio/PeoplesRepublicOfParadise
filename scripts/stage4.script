@@ -78,14 +78,14 @@
 @testArea(0,-100,50,4000)
 @waitMoveAll()
 
-@shoot(4,1,true)
-@adjustBg(0.8,0.3)
-=500
-
 @moveAllMis(0,100,null,[4],[[0,-70]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
 @waitMoveAll()
+
+@shoot(4,1,true)
+@adjustBg(0.8,0.3)
+=500
 
 @showInst("Useless old bag!",2000)
 @showInst("My new generation will replace you!",2000)
