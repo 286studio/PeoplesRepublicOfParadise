@@ -8,7 +8,7 @@ Item {
     anchors.fill: parent
 
     // the center pos
-    property int cx: self.width*0.5
+    property int cx: self.width*0.53
     property int cy: self.height*0.55
 
 
