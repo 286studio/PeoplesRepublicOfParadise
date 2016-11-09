@@ -11,7 +11,7 @@ Item {
     height: 640
     focus: true
 
-    FontLoader{id:myFont; source:'qrc:/fonts/Crimson-Roman.otf'}
+    FontLoader{id:myFont; source:'qrc:/fonts/PingFangM.ttf'}
 
     Rectangle{
         id: headPhoneMask
@@ -34,15 +34,31 @@ Item {
     }
     Button{
         id: headPhoneOk
-        text: 'Ok'
+        text: 'English'
         anchors.centerIn: parent
         onClicked: {
             headPhoneMask.opacity=0
             headPhoneText.opacity=0
             startStage()
             visible=false
+            headPhoneOkChs.visible=false
         }
         z:10001
+    }
+    Button{
+        id: headPhoneOkChs
+        text: '简体中文'
+        anchors.horizontalCenter: headPhoneOk.horizontalCenter
+        anchors.top: headPhoneOk.bottom
+        anchors.topMargin: 10
+        onClicked: {
+            headPhoneMask.opacity=0
+            headPhoneText.opacity=0
+            startStage('chs')
+            visible=false
+            headPhoneOk.visible=false
+        }
+        z: 10002
     }
 
     // root bg
@@ -102,7 +118,7 @@ Item {
         x: 100
         y: 175
         font.family: myFont.name
-        font.pixelSize: 40
+        font.pixelSize: 38
         color: 'white'
         z: 10
         Text{
@@ -145,8 +161,11 @@ Item {
     You{id: you}
 
     // start
-    function startStage(){
-        parser.reset('stage1.script')
+    function startStage(chs){
+        if(chs)
+            parser.reset('chs-stage1.script')
+        else
+            parser.reset('stage1.script')
         parser.run()
     }
 }

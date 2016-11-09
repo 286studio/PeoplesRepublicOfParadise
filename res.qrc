@@ -19,5 +19,7 @@
         <file>images/hell-bricks.jpg</file>
         <file>images/hell-neutral.png</file>
         <file>fonts/Crimson-Roman.otf</file>
+        <file>fonts/PingFangM.ttf</file>
+        <file>images/hell-fire-chs.jpg</file>
     </qresource>
 </RCC>

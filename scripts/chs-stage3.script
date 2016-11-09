@@ -1,0 +1,126 @@
+*start
+;==== 111Current Status ====
+; 3  4  X
+; 1 (0) 2
+; 6  7  X
+; stage3: "Run Away". Kills: 3 (fleeing), 6 (fleeing)
+
+
+;================ start to move again
+;#1
+@moveAll(0,-100)
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAll(0,100)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAll(-100,0)
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAll(100,0)
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@adjustBg(0.45,0.4)
+
+;#2 ==========
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,-100,null,[3],[[-10,-15]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[3],[[-15,-10]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[3,],[[-10,-15]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[3,6],[[-15,-10],[-10,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+;#3 ==========
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,-100,null,[3,6],[[-10,-15],[-10,15]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[3,6],[[-15,-10],[-15,10]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[3,6],[[-30,-15],[-45,-10]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[3,6],[[-45,-10],[-30,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@adjustBg(0.5,0.35)
+;#4 ==========
+; 3  4  5
+; 1 (0) 2
+; 6  7  8
+@moveAllMis(0,-100,null,[3,6],[[-30,-35],[-30,-10]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[3,6],[[-25,-20],[-45,10]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[3,6],[[-30,-15],[-35,10]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[3,6],[[-75,-10],[-60,15]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@showInst("混蛋！你们竟敢逃跑？从你们的主席身边逃跑？？", 2500)
+@showInst("这是你们自找的！", 2000)
+@move(3,'',-450, -350, 400)
+=410
+@shoot(3,1,true)
+@adjustBg(0.55,0.3)
+=350
+@move(6,'',250, 150, 300)
+=310
+@shoot(6,2,true)
+@adjustBg(0.65,0.3)
+
+=500
+@showInst("很好，我会再招几个小朋友过来的。", 3000)
+@showInst("来人！再上几个跳舞的！", 3000)
+@friend(3,'one','black', -100,-100)
+@friend(6,'one','black', -100,100)
+@showInst("谁也不准走！明白？", 1500)
+@showInst("给我跳舞！", 1500)
+
+@jump('chs-stage4.script', '*start')

@@ -7,7 +7,7 @@
 @showInst("Therefore, to make it great again...",3000)
 @showInst("All you need is to follow my orders.",2500)
 @showInst("Ok, let's try this:",2000)
-@showInst("Move to the area (W,S,A,D).",1000)
+@showInst("Move to the area using W,S,A and D.",1000)
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
 @showInst("Good. Now do it quickly.",1000)

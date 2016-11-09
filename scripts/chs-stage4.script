@@ -1,0 +1,94 @@
+*start
+;==== Current Status ====
+; X  4  X
+; 1 (0) 2
+; X  7  X
+
+;stage4: "Old Bag", Kill: 4 (aged)
+
+; ----------------- S4 #1 --------------------
+@moveAllMis(0,-100,null,[4], [ [0,50] ] )
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[4],[[0,-50]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[4],[[50,0]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[4],[[-50,0]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@showInst('哎呀呀，瞧瞧这可怜的老太太!', 10)
+; ----------------- S4 #2 --------------------
+@moveAllMis(0,-100,null,[4],[[0,65]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[4],[[0,-65]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@showInst('快点！老不死的东西！', 10)
+@moveAllMis(-100,0,null,[4],[[65,0]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[4],[[-65,0]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; ----------------- S4 #3 --------------------
+@moveAllMis(0,-100,null,[4],[[0,70]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@showInst("我说快点！听到没有？！你再糟蹋我的舞试试？", 10)
+@moveAllMis(0,100,null,[4],[[0,-70]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(-100,0,null,[4],[[70,0]])
+@showArea(-100,0,50)
+@testArea(-100,0,50,4000)
+@waitMoveAll()
+
+@moveAllMis(100,0,null,[4],[[-70,0]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+; ----------------- S4 #4 (Half Round) --------------------
+@moveAllMis(0,-100,null,[4],[[0,70]])
+@showArea(0,-100,50)
+@testArea(0,-100,50,4000)
+@waitMoveAll()
+
+@moveAllMis(0,100,null,[4],[[0,-70]])
+@showArea(0,0,50)
+@testArea(0,0,50,4000)
+@waitMoveAll()
+
+@shoot(4,1,true)
+@adjustBg(0.8,0.3)
+=500
+
+@showInst("没用的老东西！",2000)
+@showInst("我的新人会替掉你的位置。",2000)
+
+@friend(4,'one','black',0,-100)
+@jump('chs-stage5.script', '*start')

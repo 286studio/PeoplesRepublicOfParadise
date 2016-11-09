@@ -5,5 +5,10 @@
         <file>scripts/stage3.script</file>
         <file>scripts/stage4.script</file>
         <file>scripts/stage5.script</file>
+        <file>scripts/chs-stage4.script</file>
+        <file>scripts/chs-stage3.script</file>
+        <file>scripts/chs-stage5.script</file>
+        <file>scripts/chs-stage1.script</file>
+        <file>scripts/chs-stage2.script</file>
     </qresource>
 </RCC>

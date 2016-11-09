@@ -1,0 +1,44 @@
+*start
+;==== Current Status ====
+; X  X  X
+; 1 (0) 2
+; X  7  X
+
+;stage5: "New Generation", Kill: 1 (trembling), 2 (trembling), 7 (trembling)
+
+
+
+; ----------------- S5 #1 --------------------
+@showInst("现在，给我接着跳！",2000)
+@showInst("......",2000)
+@showInst("跳啊！",2000)
+@showInst("你们发什么抖？",2000)
+@showInst("我是你的主席！我是——",2000)
+@shoot(1, 1, true)
+@adjustBg(0.85,0.25)
+@showInst("你",600)
+@shoot(2, 2, true)
+@adjustBg(0.9,0.2)
+@showInst("慈",600)
+@shoot(7, 3, true)
+@adjustBg(0.9,0.05)
+@showInst("父!",2000)
+@showInst("好孩子从来不怕家长，对吧？",3000)
+@showInst("哼，所以我需要一代新人。",2000)
+
+@friend(1,'one','black',-100,0)
+@friend(2,'one','black',100,0)
+@friend(7,'one','black',0,100)
+
+@showInst("看！一代新人！我喜欢！", 2500)
+@showInst("全新的一代新人！", 2500)
+@adjustBg(0.9,0.05)
+@showInst("为了", 1000)
+@adjustBg(0.9,0)
+@changeBg('hell-fire-chs.jpg')
+@showInst("我的", 1000)
+@adjustBg(0.1,0.8)
+@showInst("天堂！",2000)
+=5000
+
+@maskIn()
