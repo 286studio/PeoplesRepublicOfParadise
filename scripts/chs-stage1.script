@@ -1,12 +1,13 @@
 ;@jump('stage2.script','*start')
 
 *scene0
+@changeTitle("~天堂人民共和国~")
 @showInst("欢迎来到天堂人民共和国！", 4500)
-@showInst("我是你的国家主席。", 2000)
+@showInst("我是国家主席。", 2000)
 @showInst("我们这里曾经是天堂，但现在……",3000)
 @showInst("所以，为了实现本民族的伟大复兴——",3000)
-@showInst("你只要按我说的去做，就可以了。",2500)
-@showInst("好，让我们试一试吧。",2000)
+@showInst("请务必按照我说的去做，谢谢。",2500)
+@showInst("好，让我们来试一试吧。",2000)
 @showInst("用WSAD这四个键，移动到圆圈区域。",1000)
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)

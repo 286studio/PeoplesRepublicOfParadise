@@ -2,7 +2,7 @@
 
 *scene1
 ; ================== Phase 2 ====================
-@showInst("Excellent! All my people, dance to praise me!",2000)
+@showInst("Excellent! All my people, dance to praise me!",2500)
 @friend(3,'tri','white',-100,-100)
 @friend(4,'cir','yellow',0,-100)
 @friend(5,'tri','white',100,-100)
@@ -156,11 +156,11 @@
 @shoot(8,2)
 @adjustBg(0.3,0.5)
 =500
-@showInst("Great, let me repeat:",2000)
-@showInst("To make our country a paradise, you MUST obey me!",2500)
-@showInst("You understand?",2000)
-@showInst("I'll get more people on this.",1500)
-@showInst("Look!",1500)
+@showInst("Great, let me repeat:",2300)
+@showInst("To make our country a paradise, you MUST obey me!",2800)
+@showInst("You understand?",2300)
+@showInst("I'll get more people on this.",2500)
+@showInst("Look!",1800)
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
 =500

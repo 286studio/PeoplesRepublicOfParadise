@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     QQuickView viewer;
     QSize winSize(960,640);
     viewer.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+    B2ImageUtil::singleton()->setView(&viewer);
     // common settings
     viewer.setResizeMode(QQuickView::SizeRootObjectToView);
     viewer.setTitle(QObject::tr("~People's Republic of Paradise~"));

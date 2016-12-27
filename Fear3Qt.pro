@@ -1,5 +1,8 @@
 TEMPLATE = app
 
+# must be current macOS version!
+QMAKE_MAC_SDK = macosx10.12
+
 QT += qml quick multimedia
 CONFIG += c++11 resources_big
 

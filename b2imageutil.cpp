@@ -1,5 +1,6 @@
 #include <QImageReader>
 #include <QJsonObject>
+#include <QQuickView>
 #include "b2imageutil.h"
 
 static B2ImageUtil* _singleton=nullptr;
@@ -71,3 +72,6 @@ void B2ImageUtil::setup(QSize designSize, QSize devSize){
     _scale=_clientRect.width()/_designSize.width();
 }
 
+void B2ImageUtil::changeTitle(QString s){
+    _view->setTitle(s);
+}

@@ -6,6 +6,7 @@
 #include <QJSEngine>
 #include <QtCore>
 
+class QQuickView;
 class B2ImageUtil : public QObject
 {
     Q_OBJECT
@@ -27,6 +28,7 @@ public:
     Q_INVOKABLE QSize imageSize(QString path, bool warning=false);
     Q_INVOKABLE bool isWideDevice();
     Q_INVOKABLE bool isTallDevice();
+    Q_INVOKABLE void changeTitle(QString s);
 
     // ------------------- C++ Func ---------------------------
     void setup(QSize designSize, QSize devSize);
@@ -34,6 +36,7 @@ public:
     QSizeF designSize(){return _designSize;}
     QSizeF devSize(){return _devSize;}
     qreal  scale(){return _scale;}
+    void setView(QQuickView* view) {_view=view;}
 
     // ------------------- Private Func ---------------------------
 private:
@@ -41,6 +44,7 @@ private:
     QSizeF _designSize;
     QSizeF _devSize;
     qreal  _scale;
+    QQuickView* _view;
 };
 
 #endif // B2IMAGEUTIL_H

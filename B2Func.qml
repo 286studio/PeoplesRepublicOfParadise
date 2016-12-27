@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
+import B2.ImageUtil 1.0
 import B2.Notification 1.0
 import B2.Sound 1.0
 
@@ -11,6 +12,9 @@ Item {
     property int cx: self.width*0.53
     property int cy: self.height*0.55
 
+    function changeTitle(s){
+        ImageUtil.changeTitle(s)
+    }
 
     function adjustBg(des, opa){
         bgAdjust.desaturation=des

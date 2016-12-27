@@ -39,6 +39,7 @@
 @showInst("我的", 1000)
 @adjustBg(0.1,0.8)
 @showInst("天堂！",2000)
+@changeTitle("~地狱人民共和国~")
 =5000
 
 @maskIn()
