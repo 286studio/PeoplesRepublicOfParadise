@@ -120,7 +120,7 @@
 @showInst("来人！再上几个跳舞的！", 3000)
 @friend(3,'one','black', -100,-100)
 @friend(6,'one','black', -100,100)
-@showInst("谁也不准走！明白？", 1500)
-@showInst("给我跳舞！", 1500)
+@showInst("谁也不准走！明白了？", 1500)
+@showInst("给我跳！", 1500)
 
 @jump('chs-stage4.script', '*start')

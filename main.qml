@@ -114,7 +114,7 @@ Item {
     Text{
         id: inst
         anchors.horizontalCenter: parent.horizontalCenter
-        text: "Fear III "
+        text: " "
         x: 100
         y: 175
         font.family: myFont.name

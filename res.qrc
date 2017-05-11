@@ -21,5 +21,53 @@
         <file>fonts/Crimson-Roman.otf</file>
         <file>fonts/PingFangM.ttf</file>
         <file>images/hell-fire-chs.jpg</file>
+        <file>sounds/vo_9.mp3</file>
+        <file>sounds/vo_5.mp3</file>
+        <file>sounds/vo_6.mp3</file>
+        <file>sounds/vo_7.mp3</file>
+        <file>sounds/vo_8.mp3</file>
+        <file>sounds/vo_41.mp3</file>
+        <file>sounds/vo_42.mp3</file>
+        <file>sounds/vo_43.mp3</file>
+        <file>sounds/vo_44.mp3</file>
+        <file>sounds/vo_45.mp3</file>
+        <file>sounds/vo_46.mp3</file>
+        <file>sounds/vo_47.mp3</file>
+        <file>sounds/vo_3.mp3</file>
+        <file>sounds/vo_4.mp3</file>
+        <file>sounds/vo_29.mp3</file>
+        <file>sounds/vo_30.mp3</file>
+        <file>sounds/vo_31.mp3</file>
+        <file>sounds/vo_32.mp3</file>
+        <file>sounds/vo_33.mp3</file>
+        <file>sounds/vo_34.mp3</file>
+        <file>sounds/vo_35.mp3</file>
+        <file>sounds/vo_36.mp3</file>
+        <file>sounds/vo_37.mp3</file>
+        <file>sounds/vo_38.mp3</file>
+        <file>sounds/vo_39.mp3</file>
+        <file>sounds/vo_40.mp3</file>
+        <file>sounds/vo_2.mp3</file>
+        <file>sounds/vo_20.mp3</file>
+        <file>sounds/vo_21.mp3</file>
+        <file>sounds/vo_22.mp3</file>
+        <file>sounds/vo_23.mp3</file>
+        <file>sounds/vo_24.mp3</file>
+        <file>sounds/vo_25.mp3</file>
+        <file>sounds/vo_26.mp3</file>
+        <file>sounds/vo_27.mp3</file>
+        <file>sounds/vo_28.mp3</file>
+        <file>sounds/vo_10.mp3</file>
+        <file>sounds/vo_11.mp3</file>
+        <file>sounds/vo_12.mp3</file>
+        <file>sounds/vo_13.mp3</file>
+        <file>sounds/vo_14.mp3</file>
+        <file>sounds/vo_15.mp3</file>
+        <file>sounds/vo_16.mp3</file>
+        <file>sounds/vo_17.mp3</file>
+        <file>sounds/vo_18.mp3</file>
+        <file>sounds/vo_19.mp3</file>
+        <file>sounds/vo_0.mp3</file>
+        <file>sounds/vo_1.mp3</file>
     </qresource>
 </RCC>

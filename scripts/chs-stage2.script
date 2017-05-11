@@ -10,7 +10,7 @@
 @friend(7,'cir','yellow',0,100)
 @friend(8,'tri','white',100,100)
 
-@showInst("我要换上更激动人心的音乐！",1500)
+@showInst("来点更爽的音乐！",1500)
 @bgm('HappyBirthday.mp3')
 
 ; =========== #1
@@ -148,7 +148,7 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
-@showInst("哎呀呀，瞧瞧你们两个！遇到麻烦了么？",2000)
+@showInst("哎呀呀，瞧瞧你们两个！是遇到麻烦了么？",2000)
 @showInst("还是说，你们就是麻烦？！！",2400)
 @shoot(5,1)
 @adjustBg(0.2,0.55)

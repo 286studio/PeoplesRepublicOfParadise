@@ -27,7 +27,8 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@showInst('Oh, look at you, poor old woman!', 10)
+@vo(29)
+@showInst('Oh, look at you, poor old woman!', 1000)
 ; ----------------- S4 #2 --------------------
 @moveAllMis(0,-100,null,[4],[[0,65]])
 @showArea(0,-100,50)
@@ -39,6 +40,7 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
+@vo(30)
 @showInst('Speed up, you stupid old bag!', 10)
 @moveAllMis(-100,0,null,[4],[[65,0]])
 @showArea(-100,0,50)
@@ -56,6 +58,7 @@
 @testArea(0,-100,50,4000)
 @waitMoveAll()
 
+@vo(31)
 @showInst("I said SPEED UP! You are ruining my dance!", 10)
 @moveAllMis(0,100,null,[4],[[0,-70]])
 @showArea(0,0,50)
@@ -87,8 +90,10 @@
 @adjustBg(0.8,0.3)
 =500
 
+@vo(32)
 @showInst("Useless old bag!",2300)
-@showInst("My new generation will replace you!",2600)
+@vo(33)
+@showInst("My new generation will replace you!",3200)
 
 @friend(4,'one','black',0,-100)
 @jump('stage5.script', '*start')

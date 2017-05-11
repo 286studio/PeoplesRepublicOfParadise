@@ -244,7 +244,9 @@ Item {
         else if(n===3)
             Sound.playSe3(f)
     }
-
+    function vo(n){
+        Sound.playVo('vo_'+n+'.mp3')
+    }
 
     function jump(file,scene){
         if(!file) file=''

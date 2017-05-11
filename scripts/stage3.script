@@ -103,8 +103,10 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@showInst("Whaaat? You want to run away from your Chairman??", 2900)
-@showInst("Then you deserve this!", 2500)
+@vo(23)
+@showInst("Whaaat? You want to run away from your Chairman??", 4000)
+@vo(24)
+@showInst("Then you deserve this!", 2800)
 @move(3,'',-450, -350, 400)
 =410
 @shoot(3,1,true)
@@ -116,11 +118,15 @@
 @adjustBg(0.65,0.3)
 
 =500
-@showInst("I will bring in new little friends!", 3200)
-@showInst("Bring me more dancers!", 3000)
+@vo(25)
+@showInst("I will bring in new little friends!", 3600)
+@vo(26)
+@showInst("Bring me more dancers!", 3200)
 @friend(3,'one','black', -100,-100)
 @friend(6,'one','black', -100,100)
-@showInst("No one is allowed to leave!", 1900)
-@showInst("Dance for me!", 1700)
+@vo(27)
+@showInst("No one is allowed to leave!", 2400)
+@vo(28)
+@showInst("Dance for me!", 3000)
 
 @jump('stage4.script', '*start')

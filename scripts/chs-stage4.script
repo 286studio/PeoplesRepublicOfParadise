@@ -39,7 +39,7 @@
 @testArea(0,0,50,4000)
 @waitMoveAll()
 
-@showInst('快点！老不死的东西！', 10)
+@showInst('好好跳！你这老不死的东西！', 10)
 @moveAllMis(-100,0,null,[4],[[65,0]])
 @showArea(-100,0,50)
 @testArea(-100,0,50,4000)
@@ -56,7 +56,7 @@
 @testArea(0,-100,50,4000)
 @waitMoveAll()
 
-@showInst("我说快点！听到没有？！你再糟蹋我的舞试试？", 10)
+@showInst("我说给我好好跳！你耳朵聋了是吗？！", 10)
 @moveAllMis(0,100,null,[4],[[0,-70]])
 @showArea(0,0,50)
 @testArea(0,0,50,4000)

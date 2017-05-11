@@ -2,7 +2,8 @@
 
 *scene1
 ; ================== Phase 2 ====================
-@showInst("Excellent! All my people, dance to praise me!",2500)
+@vo(12)
+@showInst("Excellent! All my people, dance to praise me!",4400)
 @friend(3,'tri','white',-100,-100)
 @friend(4,'cir','yellow',0,-100)
 @friend(5,'tri','white',100,-100)
@@ -10,7 +11,8 @@
 @friend(7,'cir','yellow',0,100)
 @friend(8,'tri','white',100,100)
 
-@showInst("I'll arrange for more exciting music!",1500)
+@vo(13)
+@showInst("Let there be more exciting music!",1500)
 @bgm('HappyBirthday.mp3')
 
 ; =========== #1
@@ -136,6 +138,7 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
+@vo(14)
 @showInst("You there! Dance better!",1200)
 
 @moveAllMis(-100,0,null,[5,8],[[-10,-5],[-15,-20]])
@@ -148,23 +151,31 @@
 @testArea(0,0,50,99999999)
 @waitMoveAll()
 
-@showInst("Oh look you two! Are you having trouble?",2000)
-@showInst("Or maybe YOU ARE the TROUBLE?",2400)
+@vo(15)
+@showInst("Oh look you two! Are you having trouble?",3700)
+@vo(16)
+@showInst("Or maybe YOU ARE the TROUBLE?",2700)
 @shoot(5,1)
 @adjustBg(0.2,0.55)
 =500
 @shoot(8,2)
 @adjustBg(0.3,0.5)
 =500
-@showInst("Great, let me repeat:",2300)
-@showInst("To make our country a paradise, you MUST obey me!",2800)
+@vo(17)
+@showInst("Great, let me repeat:",2800)
+@vo(18)
+@showInst("To make our country a paradise, you MUST obey me!",4100)
+@vo(19)
 @showInst("You understand?",2300)
-@showInst("I'll get more people on this.",2500)
+@vo(20)
+@showInst("I'll get more people on this.",3300)
+@vo(21)
 @showInst("Look!",1800)
 @friend(5,'one','white',100,-100)
 @friend(8,'one','white',100,100)
 =500
-@showInst("Ok, problem solved. Let's continue.",1500)
+@vo(22)
+@showInst("Problem solved. Let's continue.",2500)
 @trembleAll(1,0.01)
 @bgm('RoomofAngel.mp3')
 @adjustBg(0.4,0.45)

@@ -8,6 +8,7 @@ Item {
     MediaPlayer {id: se; volume: 1; loops: 1; autoPlay:true}
     MediaPlayer {id: se2; volume: 1; loops: 1; autoPlay:true}
     MediaPlayer {id: se3; volume: 1; loops: 1; autoPlay:true}
+    MediaPlayer {id: vo; volume: 1; loops: 1; autoPlay:true}
 
     function playBgm(f){
         bgm.source='qrc:/sounds/'+f
@@ -30,5 +31,9 @@ Item {
     function playSe3(f){
         se3.source='qrc:/sounds/'+f
         se3.play()
+    }
+    function playVo(f){
+        vo.source='qrc:/sounds/'+f
+        vo.play()
     }
 }
