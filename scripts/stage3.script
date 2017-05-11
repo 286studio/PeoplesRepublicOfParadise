@@ -23,6 +23,7 @@
 @testArea(-100,0,50,4000)
 @waitMoveAll()
 
+@bgm('RoomofAngel.mp3')
 @moveAll(100,0)
 @showArea(0,0,50)
 @testArea(0,0,50,4000)
@@ -104,9 +105,9 @@
 @waitMoveAll()
 
 @vo(23)
-@showInst("Whaaat? You want to run away from your Chairman??", 4000)
+@showInst("Whaaat? You want to run away from your Chairman??", 4300)
 @vo(24)
-@showInst("Then you deserve this!", 2800)
+@showInst("Then you deserve this!", 2000)
 @move(3,'',-450, -350, 400)
 =410
 @shoot(3,1,true)

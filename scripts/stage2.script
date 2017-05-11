@@ -160,7 +160,7 @@
 =500
 @shoot(8,2)
 @adjustBg(0.3,0.5)
-=500
+=1500
 @vo(17)
 @showInst("Great, let me repeat:",2800)
 @vo(18)
@@ -177,7 +177,6 @@
 @vo(22)
 @showInst("Problem solved. Let's continue.",2500)
 @trembleAll(1,0.01)
-@bgm('RoomofAngel.mp3')
 @adjustBg(0.4,0.45)
 
 @jump('stage3.script', '*start')

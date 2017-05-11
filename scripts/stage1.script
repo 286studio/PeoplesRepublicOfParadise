@@ -16,7 +16,7 @@
 @vo(5)
 @showInst("Ok, let's try this:",2400)
 @vo(6)
-@showInst("Move to the area using W,A,S and D.",2000)
+@showInst("Move to the area using W,A,S and D.",4500)
 @showArea(100,100,75)
 @testArea(100,100,75,99999999)
 @vo(7)
